@@ -26,12 +26,12 @@ export default {
       this.picture = picture
       this.email = email
 
+
       const beamsClient = new PushNotifications.Client({
-        instanceId: 'c2c96c4e-2f1b-4122-89bb-17747dcc2353',
+        instanceId: process.env.VUE_APP_PUSHER_INSTANCE_ID,
       });
 
       beamsClient.start()
-        .then(() => beamsClient.)
         .then(() => beamsClient.addDeviceInterest(email))
         .then(() => console.log('Successfully registered and subscribed!'))
         .catch(console.error);
