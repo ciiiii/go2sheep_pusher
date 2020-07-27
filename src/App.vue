@@ -1,17 +1,49 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Index msg="Go2SheeP_notification register" :isLogin="isLogin" :picture="picture" :email="email" :url="url"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import * as PushNotifications from '@pusher/push-notifications-web'
+import Index from './components/Index'
 
 export default {
   name: 'App',
+  data: function() {
+    return {
+      isLogin: false,
+      picture: "",
+      email: "",
+      url: "",
+    }
+  },
+  mounted: async function(){
+    const email = this.$cookies.get("email")
+    const picture = this.$cookies.get("picture")
+    if (email && picture) {
+      this.isLogin = true
+      this.picture = picture
+      this.email = email
+
+      const beamsClient = new PushNotifications.Client({
+        instanceId: 'c2c96c4e-2f1b-4122-89bb-17747dcc2353',
+      });
+
+      beamsClient.start()
+        .then(() => beamsClient.)
+        .then(() => beamsClient.addDeviceInterest(email))
+        .then(() => console.log('Successfully registered and subscribed!'))
+        .catch(console.error);
+    }else{
+      this.isLogin = false
+      const res = await fetch("/config");
+      const data = await res.json();
+      this.url = data.url;
+    }
+  },
   components: {
-    HelloWorld
+    Index
   }
 }
 </script>
