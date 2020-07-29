@@ -26,7 +26,6 @@ export default {
       this.picture = picture
       this.email = email
 
-
       const beamsClient = new PushNotifications.Client({
         instanceId: process.env.VUE_APP_PUSHER_INSTANCE_ID,
       });

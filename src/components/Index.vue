@@ -22,20 +22,9 @@ export default {
   },
   methods: {
     logout: async function() {
-      const token = this.$cookies.get("token")
-      const res = await fetch(`https://oauth2.googleapis.com/revoke?token=${token}`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded"
-        },
+      const res = await fetch(`/auth`, {
+        method: "DELETE",
       });
-      if (res.status==200){
-        this.$cookies.remove("email")
-        this.$cookies.remove("picture")
-        this.$cookies.remove("state")
-        this.$cookies.remove("token")
-        window.location.href = "/"
-      }
     },
     login: function(){
       window.location.href=this.url
