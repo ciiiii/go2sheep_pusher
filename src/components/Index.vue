@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     logout: async function() {
-      const res = await fetch(`/auth`, {
+      await fetch(`/auth`, {
         method: "DELETE",
       });
     },
