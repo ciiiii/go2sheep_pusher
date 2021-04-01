@@ -1414,7 +1414,7 @@
   optionalDependencies:
     vue-loader-v16 "npm:vue-loader@^16.0.0-beta.7"
 
-"@vue/cli-shared-utils@^4.4.6", "@vue/cli-shared-utils@^4.5.6":
+"@vue/cli-shared-utils@^4.5.6":
   version "4.5.6"
   resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-4.5.6.tgz#14644972043c95566788d07d9a9367edd438a4d6"
   integrity sha512-p6ePDlEa7Xc0GEt99KDOCwPZtR7UnoEaZLMfwPYU5LAWkdCmtAw8HPAY/WWcjtoiaAkY4k9tz7ZehQasZ9mJxg==
@@ -1637,11 +1637,6 @@ acorn@^6.4.1:
   integrity sha1-Ux5Yuj9RudrLmmZGyk3r9bFMpHQ=
 
 acorn@^7.1.1, acorn@^7.4.0:
-  version "7.4.1"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.4.1.tgz#feaed255973d2e77555b83dbc08851a6c63520fa"
-  integrity sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==
-
-acorn@^7.4.0:
   version "7.4.1"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.4.1.tgz#feaed255973d2e77555b83dbc08851a6c63520fa"
   integrity sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==
@@ -8533,9 +8528,9 @@ xtend@^4.0.0, xtend@~4.0.1:
   integrity sha1-u3J3n1+kZRhrH0OPZ0+jR/2121Q=
 
 y18n@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.npm.taobao.org/y18n/download/y18n-4.0.0.tgz#95ef94f85ecc81d007c264e190a120f0a3c8566b"
-  integrity sha1-le+U+F7MgdAHwmThkKEg8KPIVms=
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-4.0.1.tgz#8db2b83c31c5d75099bb890b23f3094891e247d4"
+  integrity sha512-wNcy4NvjMYL8gogWWYAO7ZFWFfHcbdbE57tZO8e4cbpj8tfUcwrwqSl3ad8HxpYWCdXcJUCeKKZS62Av1affwQ==
 
 yallist@^2.1.2:
   version "2.1.2"
