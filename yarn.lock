@@ -1414,7 +1414,7 @@
   optionalDependencies:
     vue-loader-v16 "npm:vue-loader@^16.0.0-beta.7"
 
-"@vue/cli-shared-utils@^4.4.6", "@vue/cli-shared-utils@^4.5.6":
+"@vue/cli-shared-utils@^4.5.6":
   version "4.5.6"
   resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-4.5.6.tgz#14644972043c95566788d07d9a9367edd438a4d6"
   integrity sha512-p6ePDlEa7Xc0GEt99KDOCwPZtR7UnoEaZLMfwPYU5LAWkdCmtAw8HPAY/WWcjtoiaAkY4k9tz7ZehQasZ9mJxg==
@@ -1637,11 +1637,6 @@ acorn@^6.4.1:
   integrity sha1-Ux5Yuj9RudrLmmZGyk3r9bFMpHQ=
 
 acorn@^7.1.1, acorn@^7.4.0:
-  version "7.4.1"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.4.1.tgz#feaed255973d2e77555b83dbc08851a6c63520fa"
-  integrity sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==
-
-acorn@^7.4.0:
   version "7.4.1"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.4.1.tgz#feaed255973d2e77555b83dbc08851a6c63520fa"
   integrity sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==
@@ -3505,15 +3500,15 @@ eslint-loader@^2.2.1:
     object-hash "^1.1.4"
     rimraf "^2.6.1"
 
-eslint-plugin-vue@^7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-7.0.1.tgz#8e69a9041bb9719c018f154fdcacbb17713e0240"
-  integrity sha512-Pzl88S8Gue9BPcvSg+K/Av2V5UlwGeBxiZW5cLYbDngHm7vLnSuO/q2n54kIyCqfPmuD5PKlJrNSzoN+Ur9HRg==
+eslint-plugin-vue@^7.12.1:
+  version "7.12.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-7.12.1.tgz#ef6499ce4fe0566659c8e12c71713f5308630a76"
+  integrity sha512-xHf/wCt88qmzqQerjaSteUFGASj7fPreglKD4ijnvoKRkoSJ3/H3kuJE8QFFtc+2wjw6hRDs834HH7vpuTJQzg==
   dependencies:
     eslint-utils "^2.1.0"
     natural-compare "^1.4.0"
     semver "^7.3.2"
-    vue-eslint-parser "^7.1.0"
+    vue-eslint-parser "^7.6.0"
 
 eslint-scope@^4.0.3:
   version "4.0.3"
@@ -3609,10 +3604,17 @@ esprima@^4.0.0:
   resolved "https://registry.npm.taobao.org/esprima/download/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
   integrity sha1-E7BM2z5sXRnfkatph6hpVhmwqnE=
 
-esquery@^1.0.1, esquery@^1.2.0:
+esquery@^1.2.0:
   version "1.3.1"
   resolved "https://registry.npm.taobao.org/esquery/download/esquery-1.3.1.tgz#b78b5828aa8e214e29fb74c4d5b752e1c033da57"
   integrity sha1-t4tYKKqOIU4p+3TE1bdS4cAz2lc=
+  dependencies:
+    estraverse "^5.1.0"
+
+esquery@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/esquery/-/esquery-1.4.0.tgz#2148ffc38b82e8c7057dfed48425b3e61f0f24a5"
+  integrity sha512-cCDispWt5vHHtwMY2YrAQ4ibFkAL8RbH5YGBnZBc90MolvvfkkQcJro/aZiAQUlQ3qgrYS6D6v8Gc5G5CQsc9w==
   dependencies:
     estraverse "^5.1.0"
 
@@ -8214,16 +8216,16 @@ vue-cookies@^1.7.4:
   resolved "https://registry.yarnpkg.com/vue-cookies/-/vue-cookies-1.7.4.tgz#d241d0a0431da0795837651d10b4d73e7c8d3e8d"
   integrity sha512-mOS5Btr8V9zvAtkmQ7/TfqJIropOx7etDAgBywPCmHjvfJl2gFbH2XgoMghleLoyyMTi5eaJss0mPN7arMoslA==
 
-vue-eslint-parser@^7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-7.1.0.tgz#9cdbcc823e656b087507a1911732b867ac101e83"
-  integrity sha512-Kr21uPfthDc63nDl27AGQEhtt9VrZ9nkYk/NTftJ2ws9XiJwzJJCnCr3AITQ2jpRMA0XPGDECxYH8E027qMK9Q==
+vue-eslint-parser@^7.6.0:
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-7.6.0.tgz#01ea1a2932f581ff244336565d712801f8f72561"
+  integrity sha512-QXxqH8ZevBrtiZMZK0LpwaMfevQi9UL7lY6Kcp+ogWHC88AuwUPwwCIzkOUc1LR4XsYAt/F9yHXAB/QoD17QXA==
   dependencies:
     debug "^4.1.1"
     eslint-scope "^5.0.0"
     eslint-visitor-keys "^1.1.0"
     espree "^6.2.1"
-    esquery "^1.0.1"
+    esquery "^1.4.0"
     lodash "^4.17.15"
 
 vue-hot-reload-api@^2.3.0:
